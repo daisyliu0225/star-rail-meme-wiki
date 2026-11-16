@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-16",
+  "checks": {
+    "SRC-001-trash-can.md": {
+      "base64": 0,
+      "svg": 0,
+      "widget": 1,
+      "site_chrome": 0,
+      "link_tracking": 0,
+      "raw_bytes": 6862,
+      "cleaned_bytes": 6915
+    },
+    "SRC-002.md": {
+      "base64": 0,
+      "svg": 0,
+      "widget": 0,
+      "site_chrome": 31,
+      "link_tracking": 0,
+      "raw_bytes": 4713,
+      "cleaned_bytes": 3683
+    },
+    "SRC-003.md": {
+      "base64": 2,
+      "svg": 0,
+      "widget": 0,
+      "site_chrome": 0,
+      "link_tracking": 0,
+      "raw_bytes": 32434,
+      "cleaned_bytes": 19714
+    },
+    "SRC-004.md": {
+      "base64": 0,
+      "svg": 2,
+      "widget": 0,
+      "site_chrome": 1,
+      "link_tracking": 0,
+      "raw_bytes": 17107,
+      "cleaned_bytes": 3235
+    },
+    "SRC-004-1.md": {
+      "base64": 0,
+      "svg": 0,
+      "widget": 8,
+      "site_chrome": 0,
+      "link_tracking": 0,
+      "raw_bytes": 7080,
+      "cleaned_bytes": 4265
+    },
+    "SRC-005.md": {
+      "base64": 0,
+      "svg": 0,
+      "widget": 0,
+      "site_chrome": 95,
+      "link_tracking": 8,
+      "raw_bytes": 20823,
+      "cleaned_bytes": 15833
+    },
+    "SRC-006-1.md": {
+      "base64": 2,
+      "svg": 0,
+      "widget": 0,
+      "site_chrome": 0,
+      "link_tracking": 0,
+      "raw_bytes": 33806,
+      "cleaned_bytes": 21116
+    },
+    "SRC-006-2.md": {
+      "base64": 0,
+      "svg": 0,
+      "widget": 0,
+      "site_chrome": 0,
+      "link_tracking": 0,
+      "raw_bytes": 10303,
+      "cleaned_bytes": 11016
+    }
+  },
+  "raw_sha256": {
+    "SRC-001-trash-can.md": "44fa0f34022b4b752755cf71fe56efac28b68f78f47f30161e0a6a96ac61c749",
+    "SRC-002.md": "250e1820aed35edffb37f55ac76335e9b3db18e32cef76cbb3dc98b4c99edf01",
+    "SRC-003.md": "de9da33100b9a9e367894b6f6bd42423f1daf9a3f63e8e47c57241a527b53122",
+    "SRC-004.md": "5309a92d6ee6d1541920db675b717a140266daaa5ede525d00f941baa5d47741",
+    "SRC-004-1.md": "06e6a60322d170505075c4687b85838cf401a76e9d093f79622b1b8dfa21b153",
+    "SRC-005.md": "8258df7c1c413cfcae8a4013d573db06d993c321e71f41097b860bbf7bc92cdf",
+    "SRC-006-1.md": "96011e80b64b8a281e46cc82c6997d23eb950f8dfb85d4c9710241e58b6bc4f6",
+    "SRC-006-2.md": "2baef2e8989157576db3133e3c1733ef73708754722d81298aaface90093a108"
+  }
+}
