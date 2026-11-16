@@ -1,0 +1,7 @@
+# Raw sources (local only)
+raw/
+staging/cleaned/
+
+# Python cache
+__pycache__/
+*.pyc
