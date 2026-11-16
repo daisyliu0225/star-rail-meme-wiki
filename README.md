@@ -59,7 +59,11 @@ Browser Review
 
 ## 實際執行與檢查
 
-整合 SRC-007（星神）及 SRC-008（命途）後，Wiki 的結構檢查結果如下：
+本專案已完成 10 份 Source Notes 的整理與整合，包含 37 條經人工審核的 Claims，並以此建立 13 張互動式 HTML 教學簡報。
+
+完成 Wiki 整合與簡報生成後，執行 `scripts/lint_wiki.py` 進行結構檢查。
+
+檢查結果如下：
 
 ```text
 Source notes: 10
@@ -68,23 +72,34 @@ Errors: 0
 Warnings: 4
 ```
 
-警告主要來自部分來源缺乏完整原始網址，已保留限制說明，沒有將其當成完全驗證的來源。
+Lint 未發現結構性錯誤。四項警告來自部分來源缺少完整原始網址，相關資訊限制已保留於 Wiki 中。
+
+此外，已透過瀏覽器檢查 HTML 簡報的頁面切換、圖片顯示及基本互動功能，並將簡報部署至 GitHub Pages。
+
+**線上簡報：**  
+https://daisyliu0225.github.io/star-rail-meme-wiki/slides/index.html
 
 ## Workflow 反思
 
 ### 哪個節點最容易出錯？
 
-本次執行中，Source Cleaning 與 Metadata Validation 特別需要注意。
+本次執行中，Source Cleaning 與 Metadata Validation 是最需要注意的節點。
 
-網頁擷取可能包含不必要的格式資料，而不同來源的標題、作者與網址也可能在整理時發生混淆。
+在處理網頁資料時，曾遇到大量無關的 HTML、SVG 與 Base64 內容，也發生過來源 Metadata 混淆的問題。如果沒有及時檢查，這些錯誤可能進一步影響 Claim Extraction 與 Wiki Integration。
 
 ### 如何調整檢查流程？
 
-原本可能在 Wiki Integration 才發現來源問題，因此將 Source Cleaning 與 Metadata Validation 提前到 Claim Extraction 之前，並加入 Human Review。
+因此，本專案將 Source Cleaning 與 Metadata Validation 安排在 Claim Extraction 之前，並加入 Human Review，確認來源資訊、主張內容與證據限制後，才正式整合至 Wiki。
 
-此外，在製作簡報時發現缺少「星神與命途」的背景知識，因此新增兩篇來源，經審核後重新整合 Wiki，並將教學簡報由 12 頁擴充為 13 頁。
+在 HTML 簡報製作階段，也發現原本缺少「星神與命途」的背景介紹。為改善初學者的理解程度，重新蒐集並審核 SRC-007 與 SRC-008，更新 Wiki 後再次生成簡報，將投影片由 12 張擴充為 13 張。
 
-這次修改顯示：LLM Wiki 不只是一次性產生的文件，而是能透過人工回饋持續修正的知識庫。
+此外，透過瀏覽器測試發現部分圖片尺寸、顯示位置及背景透明度不符合預期，因此重新調整版面並進行人工驗收。
+
+### 本次執行的主要收穫
+
+本次作業顯示，LLM Wiki 不只是一次性生成的文件，而是可以透過來源檢查、人工審核、結構驗證與簡報回饋持續改善的知識庫。
+
+透過將檢查安排在資料整合之前，可以降低錯誤向下游傳遞的機會；而簡報製作過程中發現的知識缺口，也能反向促使 Wiki 補充與修正。
 
 ## 本機檢查方式
 
