@@ -8,6 +8,8 @@ source_ids:
 - SRC-004
 - SRC-005
 - SRC-006-1
+- SRC-007
+- SRC-008
 last_updated: '2026-11-16'
 review_status: derived_from_approved_claims
 ---
@@ -33,3 +35,7 @@ review_status: derived_from_approved_claims
 - [SRC-006-1](../sources/SRC-006-1.md)
 
 - [Wiki 索引](../index.md)
+
+## 新增社群 Wiki 來源（2026-11-16）
+
+[SRC-007](../sources/SRC-007.md) 與 [SRC-008](../sources/SRC-008.md) 皆屬社群 Wiki。它們對星神、命途的解釋可做新手背景資料，但部分資訊需要官方智庫核對，SRC-008 的舊分類表還須以 [SRC-003](../sources/SRC-003.md) 官方 4.0 公告修正版本脈絡。

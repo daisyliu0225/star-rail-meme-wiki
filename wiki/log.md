@@ -36,3 +36,15 @@
 - **Not done**：未驗證所有外部網址是否可用；未直接比對遊戲內全部原始文本；未生成 HTML Slides，不能聲稱這些工作通過。
 
 - **Mechanical lint（本次實際執行）**：`python scripts/lint_wiki.py` → Source notes: 8；Unique claim IDs: 29；Errors: 0 Warnings: 2；WARNING wiki/sources/SRC-006-2.md: original URL missing；WARNING wiki/sources/SRC-004-1.md: original URL missing；不含外部網址或內容真偽檢查。
+
+
+## [2026-11-16] ingest + regenerate | SRC-007 / SRC-008 — 星神與命途
+
+- **Human review**：使用者明確核准 `C007-01～C007-04`、`C008-01～C008-04` 共 8 條候選 Claims，要求保留證據限制及版本差異。
+- **Motivation / Feedback Loop**：首版 12 張 HTML 教學投影片經人工檢視後，使用者指出「星神與命途」應在 Context 介紹，再引出阿哈；並指定封面阿哈與第二頁開拓者西瓜圖片。
+- **Sources**：萌娘百科《星神》與 Fandom《命途》的 Markdown 擷取；屬 `community` 二手資料。未將作者、原始 URL 或發表日期臆測為已核對。
+- **Wiki changes**：新增 `wiki/sources/SRC-007.md`、`SRC-008.md`、`wiki/concepts/aeons-and-paths.md`；更新 index、elation-4x、canon-and-source 等 Cross-reference；保留原本 29 條 Claims 的 ID。
+- **Version warning**：SRC-008 舊版命途表格未列出 4.0 已實裝之歡愉可玩角色，優先援引 SRC-003（4.0 官方公告）與 SRC-006-1（4.7 官方公告）。
+- **Slides**：重排成 13 頁；第 01 頁阿哈、第 02 頁開拓者西瓜、第 03 頁補星神／命途；Claim-to-Slide 對應另存。
+- **Evidence boundary**：社群 Wiki 轉引不當成官方原文查核，既有「社群推測改稿」仍為 unverified。
+- **Validation**：參見本次交付之 `slides/GENERATE_LOG.md` 與 `QA_REPORT.md`。

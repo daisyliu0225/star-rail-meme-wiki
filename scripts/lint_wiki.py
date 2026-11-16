@@ -26,8 +26,7 @@ for p in W.rglob('*.md'):
   target=(p.parent/link.split('#')[0]).resolve()
   if not target.is_file(): errors.append(f'{p.relative_to(BASE)}: broken link {link}')
 for p in (W/'sources').glob('*.md'):
- s = p.read_text(encoding="utf-8")
- m = yaml.safe_load(s.split("---", 2)[1])
+ m=yaml.safe_load(p.read_text(encoding='utf-8').split('---',2)[1]);s=p.read_text(encoding="utf-8")
  for cid in m.get('claim_ids',[]):
   if not re.search(r'\| '+re.escape(cid)+r' \|',s):errors.append(f'{p.name}: claim {cid} not in table')
 print('Source notes:',len(list((W/'sources').glob('*.md'))))

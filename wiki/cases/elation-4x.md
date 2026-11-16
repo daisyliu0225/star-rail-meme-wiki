@@ -3,6 +3,8 @@ id: elation-4x
 title: 案例：4.0—4.7 歡愉敘事與玩家詮釋
 type: case
 source_ids:
+- SRC-007
+- SRC-008
 - SRC-003
 - SRC-005
 - SRC-006-1
@@ -39,3 +41,7 @@ C003-04 記錄官方公告中的幽默措辭；「這是否屬於官方有意識
 - [社群解讀](../concepts/community-interpretation.md)
 
 - [Wiki 索引](../index.md)
+
+## 新手背景補充（2026-11-16）
+
+理解本案例前，可先閱讀[星神與命途](../concepts/aeons-and-paths.md)：阿哈是「歡愉」星神，歡愉是命途；故事宇宙觀和戰鬥角色命途分類不可混為一談（SRC-007:C007-03、SRC-008:C008-02）。
